@@ -1,7 +1,52 @@
-* {
-    box-sizing: border-box;
+@charset "utf-8";
+/* CSS Document */
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* RESET END */
+
+  body{
+      font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  }
+
+/*************** NAVIGATION ***************/
+
+  header{
+      text-align: center;
   }
 
   header nav ul{
-    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
+
+  header nav a {
+    color: gray;
+    padding: 1.25em 0.5em;
+      text-decoration: none;
+      align-items: flex-start;
+  }
+
+  header nav a:hover{
+      color: black;
+  }
+
+.logo img{
+    width: 30%;
+    height: 30%;
+  }
+
+/*************** MAIN ***************/
+
+h1{
+    font-family: 'Lora', 'Times New Roman', Times, serif;
+}
