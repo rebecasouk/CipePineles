@@ -1,0 +1,94 @@
+/*************** MAIN ***************/
+
+main{
+    padding-top: 100px;
+    overflow: hidden;
+    /* margin-left: 10px;
+    margin-right: 10px; */
+    perspective: 2px;
+    
+}
+
+/* section{
+}
+section:first-child{
+
+} */
+
+article:first-child{
+    
+    position: relative;
+}
+
+h1, h2, h3{
+    font-family: 'Lora', 'Times New Roman', Times, serif;
+    
+}
+
+.title{
+    top: 30%;
+    /* width: 30%; */
+    position: absolute;
+    z-index: 10;
+    margin-left: 1em;
+
+}
+
+h1{
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+
+}
+h1:nth-child(2){
+    /* display: block; */
+    margin-left: 0.5em;
+}
+
+h2{
+    font-size: 2em;
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+.figure img{
+    /* position: absolute; */
+    width: 80%;
+    margin-left: 35%; 
+}
+
+.desc{
+    /* height: 500px; */
+    margin: 0;
+    padding: 20px;
+    font-size: 1.2em;
+    background: #000;
+    color: #fff;
+}
+.desc p{
+    line-height: 2;
+}
+
+.squares{
+  display: none;
+}
+section:nth-child(3) h2{
+    margin-left:10%;
+}
+
+section:nth-child(2), section:nth-child(3){
+    position: relative;
+}
+section:nth-child(2) h2{
+    position: relative;
+    margin-left:60%;
+    padding: 0 10px;
+}
+
+.rect{
+    position: absolute;
+    top: 25px;
+    z-index: -1;
+}

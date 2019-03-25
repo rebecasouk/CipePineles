@@ -1,0 +1,58 @@
+/*************** NAVIGATION ***************/
+
+
+header nav{
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    height: 80px;
+    
+}
+  header nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* flex-wrap: wrap; */
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+	list-style: none;	
+  }
+
+  header nav ul li a {
+    font-size: 1.2em;
+    color: gray;
+    padding: 1.25em 0.5em;
+    text-decoration: none;
+    align-items: flex-start;
+  }
+
+
+header nav ul li a,
+header nav ul li a:after,
+header nav ul li a:before {
+    transition: all .2s;
+    }
+  header nav ul li a:hover{
+      color: black;
+  }
+
+  
+
+.logo{
+ 
+    width: 20%;
+    /* height: 30%; */
+    /* margin-right: auto; */
+
+  }
+
+  .logo:hover{
+      color: darkgray;
+  }
+  a.logo{
+
+  }
