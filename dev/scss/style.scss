@@ -47,8 +47,11 @@ $open: 'Open Sans', Arial, Helvetica, sans-serif;
 
 footer{
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 8px;
     margin: 0;
     padding: 0;
+    padding-top: 10px;
     background: #000;
     color:#fff;
     width: 100%;
@@ -132,10 +135,7 @@ header nav li:last-child{
         top: 35px;
     }
 
-    .rect2{
-      width: 40%;
-      top: 35px;
-  }
+  
     .desc{
         /* height: 500px; */
         position: absolute;
