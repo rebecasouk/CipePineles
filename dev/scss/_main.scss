@@ -122,8 +122,8 @@ section:nth-child(2) {
     
     }
     @media only screen and (min-width:768px) {
-        margin-bottom: 500px;
-    // height: 1000px;
+        // margin-bottom: 500px;
+    height: 800px;
     }
 }
 
@@ -132,6 +132,7 @@ section:nth-child(2) {
 
 .work{
     position: relative;
+    margin-bottom: 100px;
     @media only screen and (min-width:768px) {
     height: 300px;
     }
@@ -233,6 +234,24 @@ section:nth-child(3) {
 
 section:nth-child(3){
     margin-top: 300px;
+    
+}
+
+.view{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 50px;
+    width: 150px;
+    position: absolute;
+    border: 2px solid black;
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px 16px;
+
 }
 
 #contact{

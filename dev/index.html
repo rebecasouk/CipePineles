@@ -75,7 +75,7 @@
                     <aside>
                             <div class="works"> <img src="images/svt.jpg" alt="" ></div>
                             <div class="caption">
-                               1948.
+                               1948. // magazine
                                 <p>Cover of Seventeen, April 1948 issue, photographed by Francesco Scavullo</p>
                             </div>
                          
@@ -83,7 +83,7 @@
                     <aside>
                             <div class="works"> <img src="images/mags.jpg" alt="" ></div>
                             <div class="caption">
-                                1948. 
+                                1948. // magazine
                                 <p>Editorial spread from Charm, January 1954 issue, pages 128-129, photographed by William Helburn</p>
                             </div>
                     </aside>
@@ -99,7 +99,9 @@
                
                
                 </div>
+                <div class="view">View more</div>
             </article>
+            
 
         </section>
         <h2 id="contact" >Contact</h2>
@@ -140,9 +142,11 @@
 </footer>
 <script>
         // ScrollReveal({ reset: true });
-        ScrollReveal().reveal('.figure2', { delay: 400 });
+        ScrollReveal().reveal('.figure2', { delay: 400, });
         ScrollReveal().reveal('.title', { delay: 300 });
-        ScrollReveal().reveal('.works', { delay: 300, reset:true });
+        ScrollReveal().reveal('.works', { delay: 300, distance: '35px', reset:true });
+        ScrollReveal().reveal('.caption', { delay: 400, reset:true });
+        ScrollReveal().reveal('.get-in-touch', { delay: 300, distance: '35px', reset:true });
     </script>
 
 </html>
