@@ -35,10 +35,15 @@
     <main>
         <section>
             <article>
-                <div class="title"> <h1> Cipe</h1>
-                    <h1> Pineles</h1></div>
+                <div class="title"> 
+                    <h1> Cipe</h1>
+                    <h1> Pineles</h1>
+                </div>
+                <!-- <img class="hands" src="images/hands.jpg" alt=""> -->
                
-                <div class="figure"> <img src="images/silhouette.png" alt="silhouette"></div>
+                <!-- <div class="figure"> <img src="images/silhouette.png" alt="silhouette"></div> -->
+                <!-- ADD SLIDE IN ANIMATION -->
+                <div class="figure2 load-hidden"><img src="images/women-figure.png" alt=""></div> 
                 
              </article>
 
@@ -49,16 +54,16 @@
                     <p>One of the most influential yet unsung art directors of the 20th century. The graphic design career of Cipe Pineles (pronounced SEE-pee pi-NELL-iss) began when she was installed by Condé Nast himself in the office of M.F. Agha, art director for Condé Nast publications Vogue, Vanity Fair, and House and Garden. </p>
                 </div>
 
-                <div class="squares">
+                <!-- <div class="squares">
                     <img src="images/squares.png" alt="squares">
-                </div>
+                </div> -->
        
         </section>
 
 
         <section>
             <h2>Works</h2>
-            <img  class="rect" src="images/rectangle1.png" alt="">
+            <!-- <img  class="rect" src="images/rectangle1.png" alt=""> -->
 
             <article>
                 <div class="works">
@@ -71,7 +76,7 @@
 
         <section>
             <h2>Contact</h2>
-            <img  class="rect" src="images/Rectangle2.png" alt="">
+            <!-- <img  class="rect" src="images/Rectangle2.png" alt=""> -->
             <article>
                 <!-- <img src="images/Cipe_cig.jpg" alt="" srcset=""> -->
             </article>
@@ -90,8 +95,9 @@
 </footer>
 <script>
         // ScrollReveal({ reset: true });
+        ScrollReveal().reveal('.figure2', { delay: 400 });
         ScrollReveal().reveal('.title', { delay: 300 });
-        ScrollReveal().reveal('.works', { delay: 300 });
+        ScrollReveal().reveal('.works', { delay: 300, reset:true });
     </script>
 
 </html>
