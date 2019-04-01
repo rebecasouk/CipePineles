@@ -8,6 +8,8 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+
 /* RESET END */
 
 //Variables
@@ -28,6 +30,7 @@ $open: 'Open Sans', Arial, Helvetica, sans-serif;
 //imports
 @import "_nav";
 @import "_main";
+@import "_contact";
 
 
 footer{

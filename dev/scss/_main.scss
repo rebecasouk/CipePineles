@@ -4,8 +4,14 @@ main{
     padding-top: 100px;
     overflow: hidden;
     perspective: 2px;
+    article{
+        padding: 10px;
+    }
     
 }
+
+
+
 
 /* section{
 }
@@ -83,17 +89,57 @@ h3{
   display: none;
 }
 
-section:nth-child(2), section:nth-child(3){
-    position: relative;
-}
-section:nth-child(2) h2{
-    position: relative;
-    margin-left:60%;
-    padding: 0 10px;
+// section{
+//     background-color: red;
+// }
+
+section:first-child{
+    position: sticky;
 }
 
-section:nth-child(3) h2{
-    margin-left:10%;
+// section:first-child{
+//     background-image: url('../images/paper.png');
+//     width: 100%;
+//     background-attachment: fixed;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
+section:nth-child(2), section:nth-child(3){
+    position: relative;
+    
+}
+section:nth-child(2) {
+    // height: 1000px;
+    h2{
+        position: relative;
+        margin-left:60%;
+        padding: 0 10px;
+    
+    }
+}
+
+
+/*************** WORKS ***************/
+
+.works{
+    border: 2px solid black;
+    padding: 10px;
+    max-width: 500px;
+    // height: 400px;
+    // img{
+    //     width: 100%;
+    // }
+}
+
+
+.caption{
+    max-width: 500px;
+    margin: 15px 0;
+    height: 75px;
+    background: #000;
+    color: #fff;
+    padding: 15px;
 }
 
 .rect{
@@ -104,4 +150,15 @@ section:nth-child(3) h2{
 
 .hands {
     margin-left: -100px;
+}
+
+section:nth-child(3) {
+
+    h2 {
+         margin-left:10%;
+    }
+}
+
+section:nth-child(3){
+    margin-top: 300px;
 }
