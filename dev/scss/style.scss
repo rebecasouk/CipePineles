@@ -20,6 +20,17 @@ $open: 'Open Sans', Arial, Helvetica, sans-serif;
     margin:0;
     margin: 0;
     padding: 0;
+    @media screen and (min-width: 1200px) {
+    //  background-image: url('../images/paper.png');
+    //  height: 500px; 
+
+    //  /* Create the parallax scrolling effect */
+    //  background-attachment: fixed;
+    //  background-position: center;
+    //  background-repeat: no-repeat;
+    //  background-size: cover;
+   
+      }
   }
 
   img {
@@ -110,15 +121,12 @@ header nav li:last-child{
     main{
         padding-top: 100px;
     }
-    .figure img{
+    .figure2 img{
         /* position: absolute; */
         width: 40%;
-        margin-left: 25%; 
+        left: 12%; 
     }
 
-    .works img {
-        width: 30%;
-    }
     .rect{
         width: 40%;
         top: 35px;
@@ -147,8 +155,6 @@ header nav li:last-child{
   section{
       margin-bottom: 2em;
   }
-
-
 
 
 

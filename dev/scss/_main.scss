@@ -4,10 +4,15 @@ main{
     padding-top: 100px;
     overflow: hidden;
     perspective: 2px;
+    background: white;
     article{
         padding: 10px;
     }
-    
+    @media screen and (min-width: 1200px) {
+		max-width: 1200px;
+		margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 
@@ -140,6 +145,10 @@ section:nth-child(2) {
     background: #000;
     color: #fff;
     padding: 15px;
+    p{
+        font-size: 0.5em;
+        color: #fff;
+    }
 }
 
 .rect{
