@@ -4,6 +4,7 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -95,7 +96,6 @@ header nav li:last-child{
       color: black;
   }
 
-  
 
   .logo{
     margin-left: 3em; 
@@ -131,6 +131,11 @@ header nav li:last-child{
         width: 40%;
         top: 35px;
     }
+
+    .rect2{
+      width: 40%;
+      top: 35px;
+  }
     .desc{
         /* height: 500px; */
         position: absolute;
