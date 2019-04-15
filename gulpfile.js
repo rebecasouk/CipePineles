@@ -79,6 +79,19 @@ gulp.task('fonts', function(){
 		.pipe(gulp.dest('dist/fonts'));
 });
 
+// JS Task
+gulp.task('js', function() {
+	 return gulp.src('dev/js/*.js')
+      	.pipe(gulp.dest('dist/js'));
+});
+
+
+// CSS Task
+gulp.task('css', function() {
+	return gulp.src('dev/styles/*.css')
+		 .pipe(gulp.dest('dist/styles'));
+});
+
 // Clean Dist Folder Task
 gulp.task('clean:dist', function(){
 	return del.sync('dist');
@@ -88,8 +101,9 @@ gulp.task('clean:dist', function(){
 gulp.task('default', function() {
   runSequence(['sass', 'browserSync'], 'watch');
 });
+ 
 
 // Build Task
 gulp.task('build', function(){
-	runSequence('clean:dist', 'sass', ['useref', 'images', 'fonts']);
+	runSequence('clean:dist', 'sass', ['useref', 'images', 'fonts', 'js', 'css']);
 });
