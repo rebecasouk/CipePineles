@@ -21,23 +21,20 @@ $open: 'Open Sans', Arial, Helvetica, sans-serif;
     margin:0;
     margin: 0;
     padding: 0;
-    @media screen and (min-width: 1200px) {
-    //  background-image: url('../images/paper.png');
-    //  height: 500px; 
-
-    //  /* Create the parallax scrolling effect */
-    //  background-attachment: fixed;
-    //  background-position: center;
-    //  background-repeat: no-repeat;
-    //  background-size: cover;
-   
-      }
+    
   }
 
   img {
     max-width: 100%;
  
   }
+  body > header {
+    margin-top: 4.7em;
+  }
+  
+//   *:focus {
+//     outline: none;
+// }
 
 //imports
 @import "_nav";
@@ -64,59 +61,7 @@ html.sr .load-hidden {
 }
 
 /* MEDIA QUERIES */
-@media only screen and (min-width: 500px) {
-    
-header nav {
-    height: 90px;
-    z-index: 2;
-    position: fixed;
-    color: darkgray;
-    background: #fff;
-    width: 100%;
-}
 
-header nav ul{
-    display: flex;
-    justify-content: space-between;
-    text-transform: uppercase;
-    align-items: center;
-	list-style-type: none;	
-}
-
-
-
-header nav li:nth-child(2){
-    margin-left: 5em; 
-}
-
-header nav li:last-child{
-    display: flex;
-    align-items: center;
-    margin-right: 3em; 
-}
-
-  header nav a:hover{
-      color: black;
-  }
-
-
-  .logo{
-    margin-left: 3em; 
-    width: 150px;
-    /* display: flex; */
-    align-items: center;
-    margin-right: auto;
-}
-
-.logo img{
-    width: 60%;
-    /* display: flex; */
-    align-items: center;
-    margin-right: auto;
-  }
-
-
-}
 @media only screen and (min-width: 768px) {
     h1{
         font-size: 400%;
@@ -124,33 +69,7 @@ header nav li:last-child{
     main{
         padding-top: 100px;
     }
-    .figure2 img{
-        /* position: absolute; */
-        width: 40%;
-        left: 12%; 
-    }
 
-    .rect{
-        width: 40%;
-        top: 35px;
-    }
-
-  
-    .desc{
-        /* height: 500px; */
-        position: absolute;
-        top: 20%;
-        right: 5%;
-        width: 50%;
-        z-index: -10;
-        font-size: 1em;
-    }
-
-    .desc p{
-       padding-left: 3em;
-      padding-right: 3em;
-    }
-    
     .title{
         margin-left: 3em;
     }
@@ -163,39 +82,36 @@ header nav li:last-child{
 
 
 
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: 968px) {
 
-
-    section:nth-child(2) h2{
-        margin-left:80%;
-      }
-
-    .squares{
-        display: block;
-        transition: all .5s;
-        position: absolute;
-        top:0;
-        right: 0;
-        z-index: -10;
-        width: 30%;
-    }
-
-    h1{
-        font-size: 5em;
-    }
-
-      h2{
-      font-size: 3em;
-      margin-bottom: 2em;
+    header nav {
+     background: white;
+   width: 100%;
+    margin-right: auto;
+    margin-left: auto;
   }
 
-  section:nth-child(2) .rect{
-    right:3em;
+  header nav ul{
+    // width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
   }
+  
 
+  h1{
+      font-size: 5em;
+  }
 
   section{
-    margin: 0 3em;
-}
+    // margin: 0 3em;
+    }
 
+  }
+
+  @media only screen and (min-width: 1300px) {
+
+    header nav ul{
+      width: 1300px;
+    }
+    
   }

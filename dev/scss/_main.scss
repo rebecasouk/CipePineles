@@ -16,10 +16,6 @@ main{
 }
 
 
-
-
-// section{
-// }
 section:first-child{
     position: sticky;
     @media screen and (min-width: 500px) {
@@ -27,8 +23,8 @@ section:first-child{
         background-image: url('../images/triangle.jpg');
         width: 100%;
         background-attachment: fixed;
-      background-position: center top;
-      background-repeat: repeat;
+      background-position: 0% -190%;
+      background-repeat: no-repeat;
       background-size: cover;
     }
 } 
@@ -71,138 +67,100 @@ h2{
 
 h3{
     font-size: 1.5em;
+
 }
 
-.figure img{
-    /* position: absolute; */
-    width: 80%;
-    margin-left: 35%; 
+.work-title{
+    @media only screen and (min-width: 768px) {
+    }
 }
+
 
 .figure2 img{
      position: absolute;
     top: 0;
     left: 30%;
-    // margin-top: 20%;
-    width: 70%;
-    // margin-left: 28%; 
+    max-width: 70%;
+    @media only screen and (min-width: 485px){
+        max-width: 50%;
+    }
+    @media only screen and (min-width: 768px) {
+        width: 40%;
+        left: 12%; 
+    }
+
+
 }
 
 .desc{
-    /* height: 500px; */
+    p {
+        line-height: 2;
+    }
+    @media only screen and (min-width:768px) {
+
+        /* height: 500px; */
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        width: 50%;
+        z-index: -10;
+        font-size: 1em;
+
+     p{
+       padding-left: 3em;
+      padding-right: 3em;
+    }
+    }
+    
     margin: 0;
     padding: 20px;
     font-size: 1.2em;
     background: #000;
     color: #fff;
 }
-.desc p{
-    line-height: 2;
-}
-
-.squares{
-  display: none;
-}
-
-// section{
-//     background-color: red;
-// }
 
 
 section:nth-child(2), section:nth-child(3){
     position: relative;
     
 }
-section:nth-child(2) {
-    // height: 1000px;
-    h2{
-        position: relative;
-        margin-left:60%;
-        padding: 0 10px;
-    
-    }
-    @media only screen and (min-width:768px) {
-        // margin-bottom: 500px;
-    height: 800px;
-    }
-}
-
 
 /*************** WORKS ***************/
 
-.work{
-    position: relative;
-    margin-bottom: 100px;
-    @media only screen and (min-width:768px) {
-    height: 300px;
-    }
-    aside{
+.work-title{
+
+        position: relative;
+        margin-left:60%;
+        padding: 0 10px;
+        @media only screen and (min-width:600px) {
+        margin-left:85%;
+        }
         @media only screen and (min-width:968px) {
-            
-            
-     
-            &:first-child{
-                position: absolute;
-                right: 100px;
-                top: 50px;
-                // margin-bottom: 500px;
-                .caption{
-                    position: absolute;
-                    // width: 100%;
-                    bottom: -45px;
-                    left:150px;
-                }
-            }
-            &:nth-child(2){
-                position: absolute;
-                bottom: 0px;
-                left: -50px;
-
-                .caption{
-                    position: absolute;
-                    width: 50%;
-                    bottom: -45px;
-                    left:10px;
-                }
-            }
-       
+           margin-top: 100px;
+           margin-left: 80%;
         }
-    }
 }
 
-.works{
-    border: 2px solid black;
-    padding: 10px;
-    max-width: 500px;
-    overflow: hidden;
-    // height: 400px;
-    // img{
-    //     width: 100%;
-    // }
+#works{
+     margin-left: auto;
+     margin-right: auto;
+     @media only screen and (min-width:500px) {
+        margin-top: 100px;
 
-    img {
-        transition: transform .5s ease;
-      }
-      &:hover img {
-        transition: all .25s ease;
-          transform: scale(1.5);
-          filter: blur(2px);
-        }
-
-    @media only screen and (min-width:500px) {
-        margin-left: auto;
-        margin-right: auto;
+    }
+     @media only screen and (min-width:968px) {
+         margin-bottom:2em;
     }
 
 }
 
 
 
-.caption{
+figcaption{
     max-width: 500px;
     margin: 15px 0;
-    height: 85px;
-    background: #000;
+    height: 155px;
+    background: rgba(0, 0, 0, 1);
     color: #fff;
     padding: 15px;
     p{
@@ -213,29 +171,31 @@ section:nth-child(2) {
         margin-left: auto;
         margin-right: auto;
     }
+
+    @media only screen and (min-width:968px) {
+        max-width: 300px;
+        background: rgba(0, 0, 0, 0.78);
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .rect{
     position: absolute;
-    top: 25px;
+    top: 20px;
     z-index: -1;
-}
-
-.hands {
-    margin-left: -100px;
-}
-
-section:nth-child(3) {
-
-    h2 {
-         margin-left:10%;
+    @media only screen and (min-width:500px) {
+        right: 0%;
+        width: 70%;
     }
+
+    @media only screen and (min-width:968px) {
+        width: 40%;
+        right:3em;
+    }
+
 }
 
-section:nth-child(3){
-    margin-top: 300px;
-    
-}
 
 .view{
     margin-left: auto;
@@ -254,7 +214,139 @@ section:nth-child(3){
 
 }
 
-#contact{
-    margin-bottom: 5em;
-    margin-left: 0.8em;
+
+
+.grow{
+    height: auto;
+    @media only screen and (min-width:968px) {
+    height: 1500px!important;
+    }
 }
+.grow2{
+    height: auto;
+    @media only screen and (min-width:968px) {
+    height: 1400px!important;
+    }
+}
+
+.gallery{
+
+    @media only screen and (min-width:968px) {
+        height: 700px;
+    }
+    
+    
+    aside{
+        margin-right: auto;
+        margin-left: auto;
+        img {
+            transition: transform .5s ease;
+          }
+          &:hover img {
+            transition: all .25s ease;
+              transform: scale(1.5);
+              filter: blur(2px);
+            }
+        @media only screen and (min-width:968px) {
+            width: 40%;
+            
+            &:first-child{
+                position: absolute;
+               top: 0px;
+                left: 50px;
+
+                figcaption{
+                    position: absolute;
+                    width: 50%;
+                    bottom: -45px;
+                    left:10px;
+                }
+            }
+            &:nth-child(2){
+                position: absolute;
+                right: 100px;
+                top: 100px;
+                // margin-bottom: 500px;
+                figcaption {
+                    position: absolute;
+                    // width: 100%;
+                    bottom: -45px;
+                    left:150px;
+                }
+            }
+
+            &:nth-child(3){
+                position: absolute;
+                left: 80px;
+                bottom: 200px;
+                figcaption {
+                    position: absolute;
+                    // width: 100%;
+                    bottom: -45px;
+                    left:150px;
+                }
+            }
+            &:nth-child(4){
+                position: absolute;
+                bottom: 150px;
+                right:30px;
+                figcaption{
+                    position: absolute;
+                    width: 50%;
+                    bottom: -45px;
+                    left:10px;
+                }
+                
+            }
+           
+       
+        }
+
+
+    }
+
+    div{ 
+ 
+            display: none;
+
+    }
+    figure{
+        box-shadow: 10px 10px 24px -12px rgba(140,140,140,1);
+        border: 2px solid black;
+        padding: 10px;
+        max-width: 500px;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    figcaption:first-child {
+        position: absolute;
+        // width: 100%;
+        bottom: -45px;
+        left:150px;
+    }
+}
+
+  .more, .less {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 50px;
+    width: 155px;
+    border: 2px solid black;
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: all .25s ease;
+
+    &:hover{
+        color: grey;
+        
+    }
+}
+
